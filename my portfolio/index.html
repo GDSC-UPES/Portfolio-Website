@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db5400783a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" alt="LOGO" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#photos">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">CV</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>YouTuber</p>
+            <h1>CarryMinati</h1>
+            <h6>Real Name: Ajey Nagar 
+            </h6>
+        </div>
+    </div>
+</div>
+<!-- ABOUT ME ______________________ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me.jpeg" alt="me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Ajey Nagar, popularly known as CarryMinati, is an Indian YouTuber and streamer from Faridabad, India. He is known for his roasting videos, comedic skits and reactions to various online topics on his channel CarryMinati. His other channel CarryisLive is dedicated to gaming and live streams.In May 2020, his roast video titled "YouTube vs TikTok - The End" caused controversy on YouTube India. The video was removed by YouTube for violations against the platform's terms of service, citing reasons such as cyberbullying and harassment.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('cskills')">Achievements</p>
+                    <p class="tab-links"onclick="opentab('end')">YouTube vs TikTok</p>
+                </div>
+                <div class="tab-contents active-tab" id="cskills">
+                    <ul>
+                        <li><span>Took down TikTok</span></li>
+                        <li><span> Time's 10 Next Generation Leaders #10</span></li>
+                        <li><span>  Forbes 30 Under 30 Asia</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="end">
+                    <p>YouTube vs TikTok–The End
+                        In May 2020, Nagar published a controversial YouTube video titled "YouTube Vs TikTok–The End", in response to a video shared on Instagram by TikTok user Amir Siddiqui who berated YouTube creators for roasting TikTok users. It was taken down by YouTube citing violations of its terms of service, based on multiple complaints of harassment and cyberbullying. A large number reports had been made by LGBTQ+ activists, on account of homophobic or transphobic abusive language in the video. Many of Nagar's fans were critical of YouTube's actions, and the removal led to several new trending hashtags mentioning his name. As a result, the video received several million views, and there was a concerted effort to review bomb TikTok at Google Play Store. Other fans of Nagar spoke out in favor of YouTube's decision to remove the video. In June 2020, Nagar uploaded the music video "Yalgaar" as a further response, with renewed criticism of Siddiqui.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- photos------------------------------------- -->
+
+
+<div id="photos">
+    <div class="container">
+        <h1 class="sub-title">Aman's Clicks</h1>
+        <div class="photo-list">
+            <div>
+                    <a href="pic1.jpg"><img src="pic1.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic2.jpg"><img src="pic2.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic3.jpg"><img src="pic3.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic4.jpg"><img src="pic4.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic5.jpg"><img src="pic5.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic6.jpg"><img src="pic6.jpg" height="150px" alt=""></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- contact---------------------- -->
+<br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <p><i class="fa-brands fa-youtube"></i> https://www.youtube.com/@CarryMinati</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 xxxxxxx</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/CarryMinati?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/carryminati/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+</div> 
+
+
+
+<script>
+
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+            tablink. classList. remove ("active-link");
+            }
+
+            for (tabcontent of tabcontents){
+            tabcontent. classList. remove("active-tab");
+            }
+            event. currentTarget. classList. add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+</script>
+</body>
+</html>
