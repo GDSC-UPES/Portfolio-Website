@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db5400783a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" alt="LOGO" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#photos">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">CV</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Singer, Songwriter, Mother of cats</p>
+            <h1>Taylor Swift</h1>
+            <h6>New York or London (or somwhere around the world on her private jet)
+            </h6>
+        </div>
+    </div>
+</div>
+<!-- ABOUT ME ______________________ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Taylor-Swift.jpg.webp" alt="her">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About her</h1>
+                <p>Taylor Swift. NYU grad. Actor, Singer, Songwriter, Director, Producer.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Awards')">Awards</p>
+                    <p class="tab-links"onclick="opentab('Film')">Film</p>
+                    <!--<p class="tab-links"onclick="opentab('Stats')">Stats</p>-->
+                </div>
+                <div class="tab-contents active-tab" id="Awards">
+                    <ul>
+                        <li><span>Grammy x ...</span></li>
+                        <li><span>AMA x ...</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Films">
+                    <ul>
+                        <li><span>Cats</span></li>
+                        <li><span>Glass Onion</span></li>
+                        <!-- <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>ReactJS</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Java</span></li> -->
+                    </ul>
+                </div>
+
+              <!--  <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Confidence</span></li>
+                        <li><span>Communicational Skills</span></li>
+                        <li><span>Leadership skills</span></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- photos------------------------------------- -->
+
+
+<div id="photos">
+    <div class="container">
+        <h1 class="sub-title">My Clicks</h1>
+        <div class="photo-list">
+            <div>
+                    <a href="pic1.webp"><img src="pic1.webp" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic2.png"><img src="pic2.png" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic3.webp"><img src="pic3.webp" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic4.jpeg"><img src="pic4.jpeg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="pic5.webp"><img src="pic5.webp" height="150px" alt=""></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- contact---------------------- -->
+<br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Socials</h1>
+                <p><i class="fas fa-paper-plane"></i><a href=https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=0Wt48lmnQ7qvT88EikF6vQ></a></p>
+                <p><i class="fas fa-phone-square-alt"></i> 9667905135</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/bhavika-jetwani/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bhavikaa25/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/bhavika2502"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="Bhavika_Resume.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made wtih <i class="fas fa-heart"></i> by Bhavika Jetwani. </p>
+    </div>
+</div> 
+
+
+
+<script>
+
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+            tablink. classList. remove ("active-link");
+            }
+
+            for (tabcontent of tabcontents){
+            tabcontent. classList. remove("active-tab");
+            }
+            event. currentTarget. classList. add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+</script>
+</body>
+</html>
